@@ -1,6 +1,6 @@
 # MDPAF · Multi-dimensional Project Assessment Framework
 
-**多维分析法** —— 一套判定产品 / 项目 / 功能 / 想法「**值不值得做**」的完整分析方法论，封装为 AI 可直接执行的 Skill（B6 口径）。
+**多维分析法** —— 一套判定产品 / 项目 / 功能 / 想法「**值不值得做**」的完整分析方法论，封装为 AI 可直接执行的 Skill（B6 口径）。提供中文版（`mdpaf/`）与英文版（`mdpaf-en/`）两个 skill。
 
 > **一句话说尽这套方法**：用「是否有人付出过代价」判真伪（守门两遍，细守为痛点七问全检：真、量、解、志、度、凑），把想法放回用户世界的长链中定位（延伸建坐标 → 重切定范围），再按范围配价值判断，用「有据结论 + 排序标价的行动」收束，沿链四向生长但每个候选回炉重审——全程相信成本、不信口号，并随时准备重画地图。
 
@@ -17,22 +17,28 @@
 
 ### WorkBuddy
 
-把 `mdpaf/` 文件夹复制到 `~/.workbuddy/skills/` 下，之后在对话里说「用多维分析法分析这个项目」并附上项目资料即可。
+把 `mdpaf/` 文件夹复制到 `~/.workbuddy/skills/` 下，之后在对话里说「用多维分析法分析这个项目」并附上项目资料即可。英文对话用 `mdpaf-en/`（同样复制到 skills 目录）。
 
 ### 任意 AI（通用提示词用法）
 
-把 `mdpaf/SKILL.md` 与 `mdpaf/references/mdpaf-methodology.md` 全文一起发给任何 AI，然后附上项目资料，AI 会按七段结构交付完整分析。
+把 `mdpaf/SKILL.md` 与 `mdpaf/references/mdpaf-methodology.md` 全文一起发给任何 AI，然后附上项目资料，AI 会按七段结构交付完整分析（英文对话则改用 `mdpaf-en/` 下的两份文件）。
 
 分析只需要一份材料输入：项目说明、用户反馈、竞品信息、付费证据——有多少给多少，缺的会被如实标注「待补充」而不是编造。
 
 ## 仓库结构
 
 ```
-mdpaf/
+mdpaf/                            # 中文版 skill
 ├── SKILL.md                      # 工作流程、交付结构、硬纪律
 └── references/
     └── mdpaf-methodology.md      # B6 方法论权威文本（必读）
+mdpaf-en/                         # English edition
+├── SKILL.md                      # workflow, delivery structure, hard disciplines
+└── references/
+    └── mdpaf-methodology.md      # B6 authoritative text (English translation)
 ```
+
+**英文版从属条款**：`mdpaf-en` 是中文 B6 快照的全量英译；两版有出入时**以中文版为准**，B 系列升版时两版同步重发。核心术语对照：行为区块链 = Behavior Chain；四动词 = Gate / Analyze / Refine / Extend；粗守/细守 = Coarse Gate / Fine Gate；卡口 = Choke Point；土办法 = Folk Workaround；让步的重量 = Weight of Concession。
 
 ## 版本
 
