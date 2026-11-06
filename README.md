@@ -25,17 +25,23 @@
 
 分析只需要一份材料输入：项目说明、用户反馈、竞品信息、付费证据——有多少给多少，缺的会被如实标注「待补充」而不是编造。
 
+### 想要人类阅读版 PDF 报告
+
+分析完成后，把 `mdpaf/references/report-generation.md`（英文对话用 `mdpaf-en/references/report-generation.md`）一并发给 AI，它会按「第 2 页五问速览」结构把结果排版成 PDF 报告。该文件已内联方法论全文，也可**单独**作为报告生成提示词使用（只发它一份 + 项目材料即可）。
+
 ## 仓库结构
 
 ```
 mdpaf/                            # 中文版 skill
 ├── SKILL.md                      # 工作流程、交付结构、硬纪律
 └── references/
-    └── mdpaf-methodology.md      # B6 方法论权威文本（必读）
+    ├── mdpaf-methodology.md      # B6 方法论权威文本（必读）
+    └── report-generation.md      # 人读版报告生成提示词（B6 派生件，含内联方法论）
 mdpaf-en/                         # English edition
 ├── SKILL.md                      # workflow, delivery structure, hard disciplines
 └── references/
-    └── mdpaf-methodology.md      # B6 authoritative text (English translation)
+    ├── mdpaf-methodology.md      # B6 authoritative text (English translation)
+    └── report-generation.md      # human-readable report generation prompt (derived; English translation)
 ```
 
 **英文版从属条款**：`mdpaf-en` 是中文 B6 快照的全量英译；两版有出入时**以中文版为准**，B 系列升版时两版同步重发。核心术语对照：行为区块链 = Behavior Chain；四动词 = Gate / Analyze / Refine / Extend；粗守/细守 = Coarse Gate / Fine Gate；卡口 = Choke Point；土办法 = Folk Workaround；让步的重量 = Weight of Concession。
